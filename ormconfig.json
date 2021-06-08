@@ -1,0 +1,19 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "32413241",
+  "database": "todo_database",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["dist/**/*.entity.js"],
+  "migrations": ["dist/migration/*{.ts,.js}"],
+  "subscribers": ["dist/subscriber/*.ts"],
+  "cli": {
+    "entitiesDir": "dist/**/*.entity.ts",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "dist/subscriber"
+  },
+  "migrationsRun": false
+}
